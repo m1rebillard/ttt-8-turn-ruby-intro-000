@@ -1,4 +1,21 @@
 #!/usr/bin/env ruby
 require_relative "../lib/turn.rb"
 
-turn
+puts "Hi! Welcome to Command Line Tic Tac Toe! Would you like to play? (Y/N)"
+
+input = gets
+if(input == "N" || input == "n")
+  return
+end
+
+board[] = {" "," "," "," "," "," "," "," "," "," "," ",}
+puts "Great! Starting a new game..."
+puts "   |   |   "
+puts "-----------"
+puts "   |   |   "
+puts "-----------"
+puts "   |   |   "
+ 
+turn(board)
+
+
