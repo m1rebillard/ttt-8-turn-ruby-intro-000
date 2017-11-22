@@ -28,9 +28,6 @@ def input_to_index(input)
   return index
 end
 
-def move (board, input, token)
-  index = input_to_index(input)
-  if (valid_move?(board, index) == true)
-    board[index] = token
-  end
+def move (board, index, token)
+  board[index] = token
 end
