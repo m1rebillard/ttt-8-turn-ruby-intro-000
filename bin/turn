@@ -8,14 +8,12 @@ if(input == "N" || input == "n")
   return
 end
 
-board[] = {" "," "," "," "," "," "," "," "," "," "," ",}
+board = [" "," "," "," "," "," "," "," "," "," "," ",]
 puts "Great! Starting a new game..."
 puts "   |   |   "
 puts "-----------"
 puts "   |   |   "
 puts "-----------"
 puts "   |   |   "
- 
+
 turn(board)
-
-
