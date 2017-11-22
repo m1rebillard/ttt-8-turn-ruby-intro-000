@@ -30,6 +30,6 @@ end
 def move (board, input, token)
   index = input_to_index(input)
   if (valid_move?(board, index) == true)
-    board[index] = token
+    board[index-1] = token
   end
 end
