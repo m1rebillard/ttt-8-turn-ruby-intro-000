@@ -36,8 +36,11 @@ def turn(board)
   token = "X"
   puts "Please enter 1-9:"
   input = gets
-  index = input_to_index(input)
-  if(valid_move?(board, index) == true)
-    move(board, index, token)
+  while (valid_move?(board, index) == false)
+    input = gets
   end
+
+  index = input_to_index(input)
+  move(board, index, token)
+
 end
