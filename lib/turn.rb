@@ -31,3 +31,13 @@ end
 def move (board, index, token)
   board[index] = token
 end
+
+def turn
+  token = "X"
+  puts "Please enter 1-9:"
+  gets(input)
+  index = input_to_index(input)
+  if(valid_move?(board, index) == true)
+    move(board, index, token)
+  end
+end
