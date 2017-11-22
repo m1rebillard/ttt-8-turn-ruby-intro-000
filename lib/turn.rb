@@ -32,7 +32,7 @@ def move (board, index, token)
   board[index] = token
 end
 
-def turn
+def turn(board)
   token = "X"
   puts "Please enter 1-9:"
   input = gets
