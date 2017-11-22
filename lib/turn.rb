@@ -23,9 +23,9 @@ def position_taken(board, index)
 end
 
 def input_to_index(input)
-  input.to_i
-  input -= 1
-  return input
+  index = input.to_i
+  index -= 1
+  return index
 end
 
 def move (board, input, token)
